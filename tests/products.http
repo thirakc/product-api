@@ -1,0 +1,37 @@
+POST http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "testName2",
+  "description": "testDescription2",
+  "available": true
+}
+
+###
+
+GET http://localhost:8080/api/products
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/products/4
+Content-Type: application/json
+Accept: application/json
+
+###
+PUT http://localhost:8080/api/products/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "editName2",
+  "description": "editDesc2",
+  "available": false
+}
+
+###
+DELETE http://localhost:8080/api/products/4
+Content-Type: application/json
+Accept: application/json
